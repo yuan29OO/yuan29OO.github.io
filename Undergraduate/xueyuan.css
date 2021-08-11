@@ -1,0 +1,210 @@
+/*universal selector: box-sizzing*/
+* {box-sizing: border-box;}
+
+body  {background-color: #e0ffff;
+	   color: #191970;
+	   font-family: Arial, Verdana, sans-serif;
+	  }
+header{height: 150px;
+	   background-image: url(images/wave.jpg);
+	   background-repeat: repeat;
+	   background-color: #afeeee;
+	   display: block;
+	  }
+h1	  {color: #0000cd;
+	   padding-top: 75px;
+	   text-align: center;
+	   font-size: 3em;
+	  }
+
+nav	  {font-weight: bold;
+	   text-align: center;
+	   font-size: 1.5em;
+	   padding-top: 10px;
+	   padding-bottom: 10px;
+	   background-image: url(images/navBackground.jpg);
+	   background-repeat: repeat;
+	  }
+/*navigation hyperlink*/
+nav a {text-decoration: none;}
+/*pseudo-classes for navigation hyperlinks*/
+nav a:link   {color: #b0e0e6;}
+nav a:visited{color: #87cefa;}
+nav a:hover  {color: #00bfff;}
+/*unordered lists in navigation area*/
+nav ul{list-style-type: none;
+	   padding-left: 0;
+	  }
+
+/*main elements*/
+/*changed: the hero image will fill the entire area*/
+main   {padding-left: 0;
+	    padding-right: 0;
+	    padding-bottom: 2em;
+	    padding-top: 1em;
+	    background-color: #afeeee;
+	    display: block;
+	   }
+main h2{padding-left: 3em;
+	    padding-right: 2em;
+       }
+main h3{padding-left: 3em;
+	    padding-right: 2em;
+       }
+main h4{background-color: #87ceeb;
+	    font-size: 1.2em;
+	    padding-left: 3em;
+	    padding-right: 2em;
+	    padding-bottom: 0;
+	    text-transform: uppercase;
+	    border-bottom-style: solid;
+	    border-bottom-width: 2px;
+	    border-bottom-color: #221811;
+	    clear: left;
+       }
+main p {padding-left: 3em;
+	    padding-right: 2em;
+       }
+main div{padding-left: 3em;
+	     padding-right: 2em;
+        }
+main ul{padding-left: 3em;
+	    padding-right: 2em;
+       }
+main dl{padding-left: 3em;
+	    padding-right: 2em;
+       }
+main #rightImage {float: right;
+				  margin: 0 0 5px 5px;
+				  border: 1px;
+				 }
+
+footer{background-image: url(images/navBackground.jpg);
+	   background-repeat: repeat;
+	   font-size: .60em;
+	   font-style: italic;
+	   text-align: center;
+	   padding-bottom: 10px;
+	   border-top-style: solid;
+	   border-top-width: 2px;
+	   border-top-color: #221811;
+	   display: block;
+	  }
+
+img   {padding-left: 10px;
+	   padding-right: 10px;
+	  }
+
+div.details{padding-left: 20%;
+	    	padding-right: 20%;
+	    	overflow: auto;
+	   	   }
+
+/*id selectors*/
+#wrapper{margin-left: auto;
+		 margin-right: auto;
+		 width: 80%;
+		 background-color: #231814;
+		 min-width: 900px;
+		 max-width: 1280px;
+		 box-shadow: 5px 5px 5px #1e1e1e;
+		}
+
+/*For mobile phone*/
+#mobile {display: none;}
+#desktop{display: inline;}
+
+@media only screen and (max-width: 1024px) {
+	body {margin: 0;
+		  background-image: none;}
+	#wrapper {width: auto;
+			  min-width: 0;
+			  margin: 0;
+			  padding: 0;
+			  box-shadow: none;}
+	header {border-bottom-width: 5px;
+		    border-bottom-style: bold;
+			border-bottom-color: #fef6c2;}
+	h1 {margin-top: 0;
+		margin-bottom: 1em;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		font-size: 2.5em;}
+	nav {float: none;
+		 width: auto;
+		 padding-top: 0;
+		 margin: 10px;
+		 font-size: 1.3em;}
+	nav li {display: inline-block;}
+	nav a {padding: 1em;
+		   width: 8em;
+		   font-weight: bold;
+		   border-style: none;}
+	nav ul {padding: 0; margin: 0;}
+	#heroroad {margin: 0; padding: 0;}
+	#heromugs {margin: 0; padding: 0;}
+	#heroguitar {margin: 0; padding: 0;}
+	#herocouch {margin: 0; padding: 0;}
+	main  {margin: 0; padding: 0; font-size: 90%;}
+}
+
+@media only screen and (max-width: 768px) {
+	header {height: 128px;}
+	h1 {font-size: 2em;
+		text-align: center;
+		padding-left: 0;}
+	
+	nav {margin: 0;}
+	nav a {display: block;
+		   padding: 0.2em;
+		   width: auto;
+		   border-bottom: 1px ridge;
+		   border-bottom-color: #fef6c2;}
+	nav li {display: block;}
+	
+	main {padding-top: 1px;}
+	h2 {padding-top: 0.5em;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0.5em;
+		margin-right: 0.5em;}
+	div.details {padding-left: 0;
+				padding-right: 0;}
+	#heroroad {background-image: none; height: auto;}
+	#heromugs {background-image: none; height: auto;}
+	#heroguitar {background-image: none; height: auto;}
+	#herocouch {background-image: none; height: auto;}
+	#mobile {display: inline;}
+	#desktop {display: none;}
+}
+
+/*table*/
+table {width: 90%;
+	   margin: auto;
+	   border-spacing: 0;
+	   background-color: #e0ffff;
+	  }
+td, th {padding: 10px;}
+
+tr:nth-of-type(odd)  {background-color: #7fffd4;}
+
+/*form*/
+form  {padding: 2em;}
+label {float: left;
+	   display: block;
+	   text-align: right;
+	   width: 8em;
+	   padding-right: 1em;
+	  }
+input, textarea {display: block;
+				 margin-bottom: 1em;
+				}
+
+audio {display: block;
+	   margin-top: 1em;
+	   margin-left: 100px;
+	  }
+video {display: block;
+	   margin-top: 1em;
+	   margin-left: 100px;
+	  }

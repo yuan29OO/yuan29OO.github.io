@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Xueyuan Chen's Web Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="../main_style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a class="logo" href="index.html"><img src="../images/Chen_Logo.png"></a>
+		<nav id="mainNav">
+			<a href="../index.html">Home主页</a>
+			<a href="project1.html">Project项目</a>
+			<a href="../ART_Web_Portfolio/Chen_Portfolio_Root/index.html">Art艺术</a>
+			<a href="../contacts.html">Contacts联系</a>
+		</nav>
+	</header>
+
+		<h4>COURSE PROJECT</h4>
+		<section id="project_container">
+	    <p class="description">
+	      <span style="font-weight: bold; color: rgb(182, 239, 242)">User Interface Modeling of Android Mobile Apps for Software Optimization</span><br>
+	    	<i>Machine Learning Team Project</i><br>
+        Modeled how the users interact with different UIs and predict the users’ next actions.<br>
+      	&nbsp;&nbsp;Explored RICO datasets which contained UI layout vectors and interaction traces data.<br>
+      	&nbsp;&nbsp;Retrieved similar App UI using nearest neighbor search and encoded UI vector with activity data.<br>
+      	&nbsp;&nbsp;Trained with RNN models. Tuned and evaluated the models.<br>
+				<a class='doc-link' href="documents/665_final.pdf" target="_blank">Document</a>
+	    </p>
+
+	    <p class="description">
+	    	<span style="font-weight: bold; color: rgb(182, 239, 242)">Optimization of MVICFG generated from Hydrogen</span><br>
+	    	<i>Team Project</i><br>
+	      &nbsp;&nbsp;Hydrogen can generate MVICFG on top of different versions of source files. However, it is hard
+				to read and understand the MVICFG since the nodes are represented in LLVM instructions and
+				the graph is too big to zoom in to see the details. Our project aims to simplify MVICFG to a
+				smaller sized but more interpretable graph to developers. The result showed that our simplified
+				MVICFG is able to greatly reduce the number of nodes of MVICFG.<br>
+				<a class='doc-link' href="documents/Evaluating_Hydrogen.pdf" target="_blank">Document</a>
+	    </p>
+    </section>
+    <!-- <h1>Project 1: Character Design</h1>
+    <section id="project_container">
+    	<div class="project">
+    		<img src="images/Chen_Project1.png">
+    	</div>
+
+	    <p class="description">
+	        Design and create a full-body character art with Adobe Illustrator.
+	    </p>
+
+	    <p class="description">
+	        In the first part of the project, I brainstormed own original characters and thought about personality for everyone.<br>
+			In the second part, I picked one character Yuki that I really liked and began to explore different poses for him.<br>
+			In the first two parts, I did multiple sketches on the design process and exploration of different poses.<br>
+			Once I came up with a pose that best-describes my character, I created a character art in full body digitally with Adobe Illustrator.
+	    </p>
+    </section>
+
+    <h4>Process</h4>
+	<section id="project_container">
+		<p class="description">Yuki (Merman)</p>
+    	 <div class="project">
+		 	<img src="images/project1/Chen_CharDesign.jpg">
+			<p class="description">Sketch</p>
+    	</div>
+
+    	<div class="project">
+    		<img src="images/project1/Chen_Pose.jpg">
+			<p class="description">Pose</p>
+    	</div>
+    </section>
+
+    <section id="project_container">
+		<button id='btnShow' onclick="buttonShow()">More Info</button>
+		<div id="divShow">
+			<h3 class="info-title">Personality</h3>
+			<ul>
+				<li>Pure, soft, lovely</li>
+				<li>He is interested in human objects. And he likes playing game</li>
+				<li>He has a human friend Yuri. When Yuki visits him, they play game together</li>
+			</ul>
+			<h3 class="info-title">More Characters Design</h3>
+			<ul>
+				<li><a class='doc-link' href="documents/project1/Chen_7Characters.pdf" target="_blank">7 Characters Design</a> </li>
+			</ul>
+		</div>
+    </section> -->
+
+<script>
+function buttonShow() {
+  var x = document.getElementById("divShow");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+
+<footer>Copyright &copy; X Chen</footer>
+</html>
