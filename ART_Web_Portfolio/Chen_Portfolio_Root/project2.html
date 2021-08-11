@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Xueyuan Chen's Web Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="main_style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a class="logo" href="index.html"><img src="images/Chen_Logo.png"></a>
+		<nav id="mainNav">
+			<a href="gallary.html">Gallary</a>
+			<!--			<a href="artwork.html">Artwork</a>-->
+			<a href="project1.html">Project1</a>
+			<a href="project2.html">Project2</a>
+			<a href="project3.html">Project3</a>
+			<a href="contacts.html">Contacts</a>
+		</nav>
+	</header>
+    <h1>Project 2: Environment/Scene Design</h1>
+    <section id="project_container">
+    	<div>
+    		<img src="images/Chen_Project2.jpg">
+    	</div>
+
+	    <p class="description">
+	        Create an imaginary space for character from Project 1 with Adobe Photoshop.
+	    </p>
+
+	    <p class="description">
+			Think about the composition and objects – how they describe the scene and relate to character.<br>
+	        In the first part, I started with “napkin sketch” to brainstorm and came up with multiple iterations for the environment.<br>
+			In the second part, I began to research and gather reference images that will help you build the environment.<br>
+			In the third part, I composed and created imaginary space using images I found in the second part with Adobe Photoshop.
+	    </p>
+    </section>
+
+    <h4>Process</h4>
+    <section id="project_container">
+    	<div class="project">
+		 	<img src="images/project2/Chen_Sketch.jpg">
+			<p class="description">Napkin Sketch</p>
+    	</div>
+
+    	<div class="project">
+    		<img src="images/project2/Chen_Sketch_Colored.jpg">
+			<p class="description">Refined Draw of Environment</p>
+    	</div>
+    </section>
+
+    <section id="project_container">
+		<button id='btnShow' onclick="buttonShow()">More Info</button>
+		<div id="divShow">
+			<ul>
+				<li><a class='doc-link' href="documents/project2/Chen_NapkinSketches.pdf" target="_blank">All napkin sketches</a> </li>
+				<li><a class='doc-link' href="documents/project2/Chen_RefinedDrawsofEnvironment.pdf" target="_blank">All refined draws of environment</a> </li>
+			</ul>
+		</div>
+    </section>
+
+<script>
+function buttonShow() {
+  var x = document.getElementById("divShow");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+
+<footer>Copyright &copy; X Chen</footer>
+</html>

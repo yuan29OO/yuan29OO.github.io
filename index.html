@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Xueyuan Chen's Web Portfolio </title>
+	<link rel="stylesheet" type="text/css" href="main_style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<a class="logo" href="index.html"><img src="images/Chen_Logo.png"></a>
+		<nav id="mainNav">
+			<a href="gallary.html">Gallary</a>
+<!--			<a href="artwork.html">Artwork</a>-->
+			<a href="project1.html">Project1</a>
+			<a href="project2.html">Project2</a>
+			<a href="project3.html">Project3</a>
+			<a href="contacts.html">Contacts</a>
+		</nav>
+	</header>
+    <h1>Welcome to Xueyuan's Portfolio</h1>
+    
+	<p class="description">
+		
+	</p>
+
+<!-- 	<section id="project_container">
+		<button id='btnShow' onclick="buttonShow()">More Info</button>
+		<div id="divShow">
+			<ul>
+				<li>Hometown: Chengdu, Sichuan, China &#128060;</li>
+				<li>Bachelor: Computer Engineering at Iowa State University &#128187;</li>
+				<li>Interests: watching Anime&#127800;, play computer games&#9000;</li>
+			</ul>
+		</div>
+    </section> -->
+
+	<section id="project_container">
+        <div class="project">
+            <img src="images/Chen_About.png">
+        </div>
+    </section>
+
+<script>
+function buttonShow() {
+  var x = document.getElementById("divShow");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+</body>
+
+<footer>Copyright &copy; X Chen</footer>
+</html>
